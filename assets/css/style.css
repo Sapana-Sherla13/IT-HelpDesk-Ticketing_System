@@ -1,0 +1,533 @@
+/* ===================================
+   SERVICEDESK PROFESSIONAL THEME
+=================================== */
+
+:root{
+
+    --primary:#2563EB;
+    --primary-dark:#1D4ED8;
+
+    --sidebar:#1E293B;
+
+    --background:#F8FAFC;
+
+    --white:#FFFFFF;
+
+    --border:#E5E7EB;
+
+    --text:#0F172A;
+
+    --secondary:#64748B;
+
+    --success:#22C55E;
+    --warning:#F59E0B;
+    --danger:#EF4444;
+
+}
+
+/* ===================================
+   GLOBAL
+=================================== */
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+    font-family:'Segoe UI',sans-serif;
+
+}
+
+body{
+
+    background:var(--background);
+
+    color:var(--text);
+
+}
+
+
+/* ==========================
+   Sidebar
+========================== */
+
+
+.sidebar .logo{
+    color: #fff;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+}
+
+.sidebar a{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: #CBD5E1;
+    text-decoration: none;
+    padding: 15px 25px;
+    margin: 5px 10px;
+    border-radius: 10px;
+    transition: 0.3s;
+    font-size: 16px;
+}
+
+.sidebar a i{
+    width: 22px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.sidebar a:hover{
+    background: #2563EB;
+    color: #fff;
+}
+
+.sidebar a.active{
+    background: #2563EB;
+    color: white;
+    border-radius:10px;
+}
+
+body{
+    background: #F8FAFC;
+}
+
+.main-content.collapsed{
+
+    margin-left:80px;
+
+}
+.table-responsive{
+    overflow-x:auto;
+}
+
+
+/* ===================================
+   TOP NAVBAR
+=================================== */
+
+.topbar{
+
+    background:white;
+
+    border-radius:15px;
+
+    padding:18px 25px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:25px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.05);
+
+}
+
+.topbar h2{
+
+    margin:0;
+
+    font-size:24px;
+
+}
+
+.profile{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+}
+
+.profile img{
+
+    width:42px;
+
+    height:42px;
+
+    border-radius:50%;
+
+}
+
+.profile span{
+
+    font-weight:600;
+
+}
+.welcome-card{
+    background: linear-gradient(135deg,#0d6efd,#6610f2);
+    color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    margin-bottom: 25px;
+}
+
+.welcome-card h2{
+    font-family:'Dancing Script',cursive;
+    font-size:42px;
+}
+
+.welcome-card p{
+    margin-top: 8px;
+    font-size: 16px;
+    opacity: 0.9;
+}
+.dashboard-container {
+    padding: 0 !important;
+    width: 100% !important;
+}
+/* ===========================
+   EMPLOYEE SIDEBAR
+=========================== */
+
+.sidebar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:260px;
+    height:100vh;
+    background:#1E293B;
+    color:#fff;
+    overflow-y:auto;
+    z-index:1000;
+}
+
+.sidebar-logo{
+    padding:25px;
+    text-align:center;
+    font-size:22px;
+    font-weight:700;
+    border-bottom:1px solid rgba(255,255,255,.1);
+}
+
+.sidebar-logo i{
+    color:#3B82F6;
+    margin-right:10px;
+}
+
+.sidebar-menu{
+    list-style:none;
+    margin:0;
+    padding:20px 0;
+}
+
+.sidebar-menu li{
+    margin:6px 12px;
+}
+
+.sidebar-menu li a{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    text-decoration:none;
+    color:#CBD5E1;
+    padding:14px 18px;
+    border-radius:12px;
+    transition:.3s;
+    font-size:16px;
+}
+
+.sidebar-menu li a:hover{
+    background:#2563EB;
+    color:#fff;
+}
+
+.sidebar-menu li.active a{
+    background:#2563EB;
+    color:#fff;
+}
+
+.sidebar-menu i{
+    width:22px;
+    text-align:center;
+    font-size:18px;
+}
+
+/* ===========================
+   PAGE CONTENT
+=========================== */
+
+.main-content {
+    margin-left: 260px !important;
+    padding: 20px 10px !important;
+    min-height: 100vh;
+    width: calc(100% - 260px) !important;
+    box-sizing: border-box;
+}
+
+@media(max-width:992px){
+
+.sidebar{
+    left:-260px;
+}
+
+.main-content{
+        margin-left:0;
+        width:100%;
+    }
+.create-ticket-container {
+    padding-bottom: 30px;
+}
+}
+/* =========================================
+   DASHBOARD CARDS - FINAL FIX
+   ========================================= */
+
+.cards-section {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.cards-section .row {
+    display: grid !important;
+    grid-template-columns: repeat(6, minmax(0, 1fr)) !important;
+    gap: 20px !important;
+    margin: 0 !important;
+    width: 100% !important;
+}
+
+.cards-section .row > div {
+    width: 100% !important;
+    max-width: none !important;
+    flex: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.stats-card {
+    width: 100% !important;
+    min-width: 0 !important;
+    height: 245px !important;
+    padding: 22px 18px !important;
+    overflow: hidden !important;
+}
+
+/* ===== STAT CARD ICON + NUMBER ===== */
+
+.stats-top {
+    display: flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+    width: 100% !important;
+    margin-bottom: 22px !important;
+}
+
+.stats-icon {
+    width: 42px !important;
+    height: 42px !important;
+    min-width: 42px !important;
+    flex: 0 0 42px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    border-radius: 14px !important;
+}
+
+.stats-icon i {
+    font-size: 18px !important;
+}
+
+.stats-number {
+    font-size: 20px !important;
+    font-weight: 700 !important;
+    line-height: 1 !important;
+
+    white-space: nowrap !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.stats-card p {
+    font-size: 16px !important;
+    line-height: 1.5 !important;
+    margin: 0 !important;
+}
+
+
+/* =========================================
+   RESPONSIVE
+   ========================================= */
+
+@media (max-width: 1200px) {
+
+    .cards-section .row {
+        grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .cards-section .row {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    .cards-section .row {
+        grid-template-columns: 1fr !important;
+    }
+
+}
+/* ===========================
+   DASHBOARD STAT CARDS
+=========================== */
+
+.stats-card {
+    height: 245px;
+    padding: 24px;
+    border-radius: 18px;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    overflow: hidden;
+}
+
+.stats-top {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 20px;
+}
+
+.stats-number {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1;
+    white-space: nowrap;
+}
+
+.stats-icon {
+    width: 68px;
+    height: 68px;
+    min-width: 68px;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+}
+
+.stats-card h5 {
+    font-size: 21px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.stats-card p {
+    font-size: 16px;
+    color: #64748B;
+    line-height: 1.5;
+    margin: 0;
+}
+/* ===== FIX ADMIN DASHBOARD CARD CONTENT ===== */
+
+.stat-card {
+    overflow: hidden !important;
+}
+
+.stat-card .stat-top {
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    width: 100% !important;
+}
+
+.stat-card .stat-icon {
+    width: 48px !important;
+    height: 48px !important;
+    min-width: 48px !important;
+    flex-shrink: 0 !important;
+}
+
+.stat-card .stat-icon i {
+    font-size: 21px !important;
+}
+
+.stat-card .stat-number {
+    font-size: 28px !important;
+    line-height: 1 !important;
+    white-space: nowrap !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+/* =========================================
+   ADMIN DASHBOARD STAT CARDS - FINAL FIX
+   ========================================= */
+
+.stats-card {
+    height: 255px !important;
+    min-height: 255px !important;
+    padding: 16px !important;
+    overflow: hidden !important;
+    min-width: 0 !important;
+}
+
+.stats-top {
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    width: 100% !important;
+    margin-bottom: 22px !important;
+}
+
+.stats-icon {
+    width: 48px !important;
+    height: 48px !important;
+    min-width: 48px !important;
+    flex: 0 0 48px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    border-radius: 16px !important;
+}
+
+.stats-icon i {
+    font-size: 21px !important;
+}
+
+.stats-number {
+    font-size: 30px !important;
+    font-weight: 700 !important;
+    line-height: 1 !important;
+    white-space: nowrap !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.stats-top + h5 {
+    font-size: 20px !important;
+    line-height: 1.25 !important;
+    margin: 0 0 10px 0 !important;
+    font-weight: 700 !important;
+}
+
+.stats-top + h5 + p {
+    font-size: 16px !important;
+    line-height: 1.5 !important;
+    margin: 0 !important;
+    color: #64748B !important;
+}
+/* Fix dashboard left and right spacing */
+.main-content {
+    margin-left: 260px !important;
+    width: calc(100% - 260px) !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}

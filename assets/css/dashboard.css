@@ -1,0 +1,522 @@
+/* ==============================
+   GLOBAL
+============================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#F4F7FC;
+    font-family:"Segoe UI",Tahoma,Geneva,Verdana,sans-serif;
+    color:#1E293B;
+}
+
+.dashboard-container{
+    padding:25px 40px;
+}
+/*==================================
+  WELCOME HEADER
+===================================*/
+
+
+.dashboard-header{
+
+    background:#fff;
+
+    border:2px solid #2563EB;
+
+    border-radius:20px;
+
+    padding:35px 40px;
+
+    margin-bottom:30px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.06);
+
+}
+
+.dashboard-title{
+    font-size:38px;
+    font-weight:700;
+    color:#1E293B;
+    margin-bottom:8px;
+}
+
+.dashboard-subtitle{
+    color:#64748B;
+    font-size:17px;
+}
+.dashboard-table{
+    margin:20px 20px 0 20px;
+}
+
+.hero-info{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-end;
+    gap:12px;
+}
+
+.hero-info span{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    background:#EEF4FF;
+    color:#2563EB;
+    padding:10px 18px;
+    border-radius:30px;
+    font-weight:600;
+}
+
+.profile-dropdown .btn{
+    border-radius:12px;
+}
+
+
+/*==================================
+    STATISTICS CARDS
+===================================*/
+
+.stats-card{
+
+    background:#fff;
+
+    border-radius:16px;
+
+    padding:22px;
+
+    height:190px;
+
+    border:1px solid #E5E7EB;
+
+    box-shadow:0 4px 15px rgba(0,0,0,.06);
+
+    transition:.3s;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:space-between;
+
+}
+
+.stats-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 15px 35px rgba(37,99,235,.15);
+
+}
+
+.stats-top{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+.stats-icon{
+
+    width:56px;
+
+    height:56px;
+
+    border-radius:14px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:22px;
+
+}
+
+.stats-number{
+
+    font-size:34px;
+
+    font-weight:700;
+
+    color:#0F172A;
+
+}
+
+.stats-card h5{
+
+    margin-top:18px;
+
+    margin-bottom:6px;
+
+    font-size:17px;
+
+    font-weight:700;
+
+}
+
+.stats-card p{
+
+    color:#64748B;
+
+    font-size:13px;
+
+    margin:0;
+
+}
+
+.cards-section{
+    padding:0 18px;
+}
+/* Top Border Colors */
+
+.purple{
+    border-top:5px solid #7C3AED;
+}
+
+.blue{
+    border-top:5px solid #2563EB;
+}
+
+.cyan{
+    border-top:5px solid #06B6D4;
+}
+
+.orange{
+    border-top:5px solid #F59E0B;
+}
+
+.green{
+    border-top:5px solid #22C55E;
+}
+
+.red{
+    border-top:5px solid #EF4444;
+}
+
+
+/* Icon Backgrounds */
+
+.bg-purple{
+
+    background:#F3E8FF;
+
+    color:#7C3AED;
+
+}
+
+.bg-blue{
+
+    background:#DBEAFE;
+
+    color:#2563EB;
+
+}
+
+.bg-cyan{
+
+    background:#CFFAFE;
+
+    color:#0891B2;
+
+}
+
+.bg-orange{
+
+    background:#FEF3C7;
+
+    color:#D97706;
+
+}
+
+.bg-green{
+
+    background:#DCFCE7;
+
+    color:#16A34A;
+
+}
+
+.bg-red{
+
+    background:#FEE2E2;
+
+    color:#DC2626;
+
+}
+/*==============================
+    TABLE
+===============================*/
+
+.dashboard-table{
+
+    background:#fff;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    border:1px solid #E5E7EB;
+
+    box-shadow:0 8px 25px rgba(15,23,42,.08);
+
+}
+
+.table-header{
+
+    background:linear-gradient(90deg,#2563EB,#4F46E5);
+
+    color:#fff;
+
+    height:60px;
+
+    padding:0 22px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    border-radius:18px 18px 0 0;
+
+}
+
+.table-header i{
+
+    margin-right:10px;
+
+}
+
+.view-all{
+
+    color:#fff;
+
+    text-decoration:none;
+
+    font-size:15px;
+
+    font-weight:600;
+
+}
+
+.view-all:hover{
+
+    background:#fff;
+
+    color:#2563EB;
+
+}
+
+.table-body{
+
+    padding:0;
+
+}
+
+.custom-table{
+
+    margin:0;
+
+}
+
+.custom-table thead{
+
+    background:#fff;
+
+}
+
+.custom-table th{
+
+    padding:18px;
+
+    border:none;
+
+    font-size:15px;
+
+    color:#1E293B;
+
+    font-weight:700;
+
+}
+
+.custom-table td{
+
+    padding:18px;
+
+    border-top:1px solid #EEF2F7;
+
+    vertical-align:middle;-
+
+}
+
+.custom-table tbody tr{
+
+    transition:.3s;
+
+}
+
+.custom-table tbody tr:hover{
+
+    background:#F8FAFC;
+
+}
+/*==============================
+    TABLE BADGES
+==============================*/
+
+.badge-open{
+    background:#FFF7E6;
+    color:#F59E0B;
+    border:1px solid #FCD34D;
+    padding:6px 14px;
+    border-radius:8px;
+    font-size:13px;
+    font-weight:600;
+}
+
+.badge-assigned{
+    background:#E0F2FE;
+    color:#0284C7;
+    border:1px solid #7DD3FC;
+    padding:6px 14px;
+    border-radius:8px;
+    font-size:13px;
+    font-weight:600;
+}
+
+.badge-progress{
+    background:#DBEAFE;
+    color:#2563EB;
+    border:1px solid #93C5FD;
+    padding:6px 14px;
+    border-radius:8px;
+    font-size:13px;
+    font-weight:600;
+}
+
+.badge-resolved{
+    background:#DCFCE7;
+    color:#16A34A;
+    border:1px solid #86EFAC;
+    padding:6px 14px;
+    border-radius:8px;
+    font-size:13px;
+    font-weight:600;
+}
+
+.badge-closed{
+    background:#FEE2E2;
+    color:#DC2626;
+    border:1px solid #FCA5A5;
+    padding:6px 14px;
+    border-radius:8px;
+    font-size:13px;
+    font-weight:600;
+}
+/*==============================
+    TICKET NUMBER
+==============================*/
+
+.ticket-link{
+
+    color:#2563EB;
+
+    font-weight:700;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.ticket-link:hover{
+
+    color:#1D4ED8;
+
+    text-decoration:underline;
+
+}
+/* ==============================
+   ADMIN DASHBOARD CARD LAYOUT
+   ============================== */
+
+/* Use more available screen width */
+.dashboard-container {
+    width: 100%;
+    max-width: none;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Reduce unnecessary side spacing */
+.cards-section {
+    width: 100%;
+    margin: 0;
+}
+
+/* Make all 6 cards equal size */
+.cards-section .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/* Card size similar to Employee Dashboard */
+.cards-section .stats-card {
+    width: 100%;
+    min-height: 205px;
+    padding: 20px;
+    border-radius: 18px;
+}
+
+/* Keep the number and icon properly aligned */
+.cards-section .stats-top {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+}
+
+/* Number size */
+.cards-section .stats-number {
+    font-size: 42px;
+    font-weight: 700;
+}
+
+/* Icon size */
+.cards-section .stats-icon {
+    width: 64px;
+    height: 64px;
+    min-width: 64px;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+}
+
+/* Card heading */
+.cards-section .stats-card h5 {
+    font-size: 20px;
+    margin-top: 22px;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+/* Card description */
+.cards-section .stats-card p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+/* Reduce gap between cards */
+.cards-section .row {
+    --bs-gutter-x: 18px;
+}
